@@ -24,6 +24,9 @@
 
   ## ScreenShot
   ![screenshot](assets/images/screenshot-readme.png)
+  
+  ## Tutorial Video Link
+  <a href="https://drive.google.com/file/d/1Pvh1xpMEOJvWP4Ydf6DV1ib6FuHorhAN/view" target="_blank">Tutorial Video</a>
 
   ## Contributions
   Isaiah Negron
