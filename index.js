@@ -45,10 +45,17 @@ const questions = [
   },
 
   {
-    type:'input',
+    type:'list',
+    message:'What License Are You Using For Your Application?',
     name:'License',
-    message:'What License Are You Using For Your Application, If Any?'
+    choices: ["AAL", "ISC", "MIT","NTP","W3C"]
 
+  },
+
+  {
+    type:'input',
+    name:'Github',
+    message:'What Is Your Github Username?'
   },
 
   {
@@ -59,12 +66,25 @@ const questions = [
 ];
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function(Input) {
+
+    const markdownInfo = generateMarkdown(Input)
+
+    fs.writeFile('README.md', markdownInfo, function(err) {
+      if(err) {
+        console.log(err)
+      }
+      else{
+        console.log('BOOM!YOU ARE WELCOME!')
+      }
+    })
+
+  },
+  )};
 
 // Function call to initialize app
 init();
+
 
