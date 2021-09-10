@@ -22,6 +22,9 @@
   ## Usage
    This application will be used to create professional README files for future projects and challenges. It will be used to display an overview of the project that I am working on.
 
+  ## ScreenShot
+  ![screenshot](assets/images/screenshot-readme.png)
+
   ## Contributions
   Isaiah Negron
 
